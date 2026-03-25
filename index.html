@@ -1,0 +1,142 @@
+<!DOCTYPE html><html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nervozen Oficial</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"><style>
+body{margin:0;font-family:Poppins;background:#ffffff;color:#1a1a1a}
+
+.navbar{position:fixed;top:0;width:100%;background:#0d6efd;padding:18px 25px;z-index:1000;box-shadow:0 5px 20px rgba(0,0,0,0.1)}
+.navbar h2{margin:0;color:#fff;font-size:22px;font-weight:700}
+
+.container{padding:20px;max-width:1100px;margin:auto}
+h1,h2,h3{text-align:center}
+p{text-align:center;line-height:1.7}
+
+.btn{display:inline-block;padding:16px 30px;margin:10px;border-radius:12px;text-decoration:none;font-weight:700;transition:0.3s}
+.btn-primary{background:#0d6efd;color:#fff}
+.btn-primary:hover{background:#084298}
+.btn-whatsapp{background:#25d366;color:#fff}
+
+.hero{text-align:center;padding:120px 20px 70px;background:#f5f9ff}
+
+.cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.card{background:#ffffff;padding:30px;border-radius:18px;flex:1;min-width:260px;position:relative;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.08);border:1px solid #e6ecf5}
+.card:hover{transform:scale(1.03)}
+
+.badge{position:absolute;top:-12px;left:15px;background:#0d6efd;color:#fff;padding:6px 12px;border-radius:6px;font-size:12px;font-weight:bold}
+
+.cta-fixed{position:fixed;bottom:0;width:100%;background:#0d6efd;text-align:center;padding:12px;z-index:999}
+.whatsapp-float{position:fixed;bottom:90px;right:20px;background:#25d366;padding:16px;border-radius:50%;font-size:18px;z-index:999}
+
+img{max-width:100%;border-radius:12px;margin:20px 0}
+.section{margin:60px 0}
+.highlight{color:#0d6efd;font-weight:700}
+.countdown{font-size:20px;text-align:center;margin-top:10px;color:#ff3b3b}
+
+.alert{background:#ff3b3b;color:#fff;padding:12px;text-align:center;font-weight:700}
+
+.social-proof{
+position:fixed;
+bottom:140px;
+left:20px;
+background:#ffffff;
+padding:12px 16px;
+border-radius:12px;
+font-size:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.dot{
+width:10px;
+height:10px;
+background:#25d366;
+border-radius:50%;
+animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);opacity:1}
+50%{transform:scale(1.5);opacity:0.5}
+100%{transform:scale(1);opacity:1}
+}
+
+</style><script>
+let tempo = 900;
+setInterval(()=>{
+let min = Math.floor(tempo/60);
+let sec = tempo%60;
+document.getElementById('timer').innerHTML = min+":"+(sec<10?"0":"")+sec;
+tempo--;
+if(tempo<=0) tempo=900;
+},1000);
+
+const nomes=["Carlos","Maria","João","Ana","Pedro","Lucas","Fernanda"];
+setInterval(()=>{
+let nome=nomes[Math.floor(Math.random()*nomes.length)];
+document.getElementById("proof-text").innerText = nome+" acabou de comprar";
+},4000);
+</script></head><body><div class="navbar">
+<h2>Nervozen</h2>
+</div><div class="alert">🔥 Alta demanda hoje - últimas unidades disponíveis</div><div class="hero">
+<h1>Você não precisa conviver com dores, formigamento, queimação e dormência</h1>
+<p>Mais de <span class="highlight">1.000 pessoas</span> já estão usando <b>Nervozen</b></p>
+<img src="imagem1.jpg">
+<img src="imagem2.jpg">
+<img src="imagem3.jpg">
+<div class="countdown">Oferta expira em: <span id="timer"></span></div>
+<a href="#planos" class="btn btn-primary">QUERO COMEÇAR AGORA</a>
+<a href="http://bit.ly/4sJc5ur" class="btn btn-whatsapp">Falar no WhatsApp</a>
+</div><div class="container"><div class="section">
+<h2>Você sente isso?</h2>
+<p>Dormência, formigamento ou queimação nos pés podem estar afetando sua qualidade de vida todos os dias.</p>
+</div><div class="section">
+<h2>Sobre o tratamento</h2>
+<p>O <b>Nervozen</b> é o suplemento principal. E para potencializar os resultados, você recebe o <b>Nervogel</b> como brinde exclusivo.</p>
+</div><div class="section">
+<h2>O que é o Nervogel?</h2>
+<p>Um gel de aplicação local que auxilia no alívio imediato do desconforto.</p>
+</div><div class="section" id="planos">
+<h2>Escolha seu tratamento</h2>
+<div class="cards"><div class="card">
+<div class="badge">Melhor custo</div>
+<h3>3 Meses</h3>
+<p>3 frascos de Nervozen</p>
+<p>🎁 +1 Nervogel GRÁTIS</p>
+<p><b>12x de 36,85<br><b>Tratamento por R$ 367</b></p>
+<a href="https://app.sonharpay.com.br/a/10367/9C532CA1/?ch=4995E2E8&tp=5" class="btn btn-primary">Comprar Agora</a>
+</div><div class="card" style="border:2px solid #0d6efd;transform:scale(1.05)">
+<div class="badge">Recomendado</div>
+<h3>5 Meses</h3>
+<p>5 frascos de Nervozen</p>
+<p>🎁 +1 Nervogel GRÁTIS</p>
+<p><b>12x de 46,89<br><b>Tratamento por R$ 467</b></p>
+<a href="https://app.sonharpay.com.br/a/10367/9C532CA1/?ch=8B8B0DDD&tp=5" class="btn btn-primary">Comprar Agora</a>
+</div><div class="card">
+<div class="badge">Melhor opção</div>
+<h3>1 Ano</h3>
+<p>8 frascos de Nervozen</p>
+<p>🎁 +2 Nervogel GRÁTIS</p>
+<p><b>12x de 77,01<br><b>Tratamento por R$ 767</b></p>
+<a href="https://app.sonharpay.com.br/a/10367/9C532CA1/?ch=545CB6BA&tp=5" class="btn btn-primary">Comprar Agora</a>
+</div></div>
+</div></div><div class="section">
+<h2>Formas de pagamento</h2>
+<p><b>Prioridade:</b> pagamento antecipado com aprovação imediata para garantir seu tratamento.</p>
+<p>💳 Cartão de crédito (em até 12x)</p>
+<p>🧾 Boleto bancário disponível</p>
+<p>💬 Caso ainda tenha dúvidas ou precise de mais segurança, você pode optar por <b>pagar após a entrega</b>.</p>
+<p>Para isso, fale com um especialista no WhatsApp:</p>
+<a href="http://bit.ly/4sJc5ur" class="btn btn-whatsapp">Falar com especialista</a>
+</div><div class="cta-fixed">
+<a href="https://app.sonharpay.com.br/a/10367/9C532CA1/?ch=8B8B0DDD&tp=5" class="btn btn-primary">COMPRAR AGORA</a>
+</div><div class="social-proof">
+<div class="dot"></div>
+<span id="proof-text">Alguém acabou de comprar</span>
+</div><a href="http://bit.ly/4sJc5ur" class="whatsapp-float">💬</a>
+
+</body>
+</html>
